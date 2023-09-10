@@ -1,0 +1,7 @@
+
+v=c(100,5,3,0,1)
+cat("Orignal vector :",v,"\n")
+cat("Ascending order : ",sort(v),"\n")
+cat("Descending order :",sort(v,decreasing=TRUE),"\n")
+
+

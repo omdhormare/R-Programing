@@ -1,0 +1,7 @@
+n<-c(10,5,20,15)
+cat("Original vector:", n, "\n")
+cat("Sum :",sum(n),"\n")
+cat("Mean :",mean(n),"\n")
+cat("Product :",prod(n),"\n")
+
+

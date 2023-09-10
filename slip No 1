@@ -1,0 +1,10 @@
+value=c(10,500,700,600,1000,2)
+print("\n \ n Priginal Vector :")
+print(value)
+
+print("\n \n Maximum value :")
+print(max(value))
+
+print("\n \n Minimum value :")
+print(min(value))
+ 

@@ -1,0 +1,15 @@
+s <- c("apple", "banana", "grape", "kiwi", "orange", "pineapple", "strawberry", "watermelon", "pear", "mango")
+
+sorted_ascending <- sort(s)
+sorted_descending <- sort(s, decreasing = TRUE)
+
+cat("Original list:", "\n")
+print(s)
+
+cat("Sorted in ascending order:", "\n")
+print(sorted_ascending)
+
+cat("Sorted in descending order:", "\n")
+print(sorted_descending)
+
+
