@@ -1,0 +1,21 @@
+ print(letters)
+ [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r"
+[19] "s" "t" "u" "v" "w" "x" "y" "z"
+
+> print(LETTERS)
+ [1] "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R"
+[19] "S" "T" "U" "V" "W" "X" "Y" "Z"
+
+> c=head(letters,10)
+> print(c)
+ [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j"
+
+> c=tail(LETTERS,10)
+> print(c)
+ [1] "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+ 
+
+> c=tail(LETTERS[22:24])
+> print(c)
+[1] "V" "W" "X"
+
