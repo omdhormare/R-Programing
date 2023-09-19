@@ -1,0 +1,23 @@
+print("1. Create A List of Student....")
+a=list("om","sai","Ram","Rahul","Ganesh","Soham")
+print("Display The List......")
+print(a)
+
+print("2.Give The Name Of Student List......")
+names(a)=c("101","102","103","104","105","106")
+print(a)
+
+print("3.Add A Student At The End of the List......")
+c1=c("Sharad")
+c=append(a,c1)
+print(c)
+
+print("4.Remove The First Student......")
+b = a[-1]
+print(b)
+
+print("5.Update The Second Last Student......")
+a[5]="Manoj"
+print(a)
+
+
