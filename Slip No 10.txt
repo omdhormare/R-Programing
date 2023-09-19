@@ -1,0 +1,16 @@
+a=list("pune","nagar","Nashik","Belapur","Rahury")
+print(a)
+
+names(a)=c("one","two","three","four","five")
+print(a)
+
+b=head(a,-1)
+print(b)
+
+c1=c("Kopargav")
+append(a,c1)
+
+a[3]="Wari"
+print(a)
+
+
