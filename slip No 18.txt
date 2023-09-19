@@ -1,0 +1,9 @@
+print("1..  A Create Three Vector......")
+
+a=c(10,20,30)
+b=c(40,50,60)
+c=c(70,80,90)
+
+print("2.. Content Of A matrix....")
+m=cbind(a,b,c)
+print(m)
