@@ -1,0 +1,84 @@
+SET A :
+-----------------------------------------
+1) Write a R program to accept dimensions of a cylinder and print the surface area and volume
+--------------------------------------------------------------------------------------------------------------------------------------------
+radius <- readline("Enter the radius of the cylinder: ")
+radius <- as.numeric(radius)
+
+height <- readline("Enter the height of the cylinder: ")
+height <- as.numeric(height)
+
+sarea <- 2 * pi * radius * (radius + height)
+
+volume <- pi * radius^2 * height
+cat("Surface Area of Cylinder: ", sarea, "\n")
+cat("Volume of Cylinder: ", volume, "\n")
+--------------------------------------------------------------------------------------------------------------------------------------------
+2). Write a R program to accept temperatures in Fahrenheit (F) and print it in Celsius(C) and Kelvin (K).
+fahrenheit_to_celsius <- function(fahrenheit)
+--------------------------------------------------------------------------------------------------------------------------------------------
+ {
+  celsius <- (fahrenheit - 32) * 5/9
+  return(celsius)
+}
+
+fahrenheit_to_kelvin <- function(fahrenheit) 
+{
+  kelvin <- (fahrenheit - 32) * 5/9 + 273.15
+  return(kelvin)
+}
+
+fahrenheit <- as.numeric(readline("Enter the temperature in Fahrenheit: "))
+celsius <- fahrenheit_to_celsius(fahrenheit)
+kelvin <- fahrenheit_to_kelvin(fahrenheit)
+
+cat("Temperature in Fahrenheit (F): ", fahrenheit, "\n")
+cat("Temperature in Celsius (C): ", celsius, "\n")
+cat("Temperature in Kelvin (K): ", kelvin, "\n")
+--------------------------------------------------------------------------------------------------------------------------------------------
+3).Write a R program to accept two numbers and print arithmetic and harmonic mean of the two number
+--------------------------------------------------------------------------------------------------------------------------------------------
+a=6
+b=3
+arithmetic_mean = (a+b) /2
+harmonic_mean = (a*b) / (a+b)
+print(arithmetic_mean)
+print(harmonic_mean)
+--------------------------------------------------------------------------------------------------------------------------------------------
+4).Accept three dimensions length (l), breadth(b) and height(h) of a cuboid and print surface area and volume
+
+surface_area <- function(length, breadth, height) 
+{
+  area <- 2 * (length * breadth + length * height + breadth * height)
+  return(area)
+}
+
+volume <- function(length, breadth, height) 
+{
+  vol <- length * breadth * height
+  return(vol)
+}
+
+length <- as.numeric(readline("Enter the length of the cuboid: "))
+breadth <- as.numeric(readline("Enter the breadth of the cuboid: "))
+height <- as.numeric(readline("Enter the height of the cuboid: "))
+
+surface_area_result <- surface_area(length, breadth, height)
+volume_result <- volume(length, breadth, height)
+
+cat("Surface Area of the Cuboid: ", surface_area_result, "\n")
+cat("Volume of the Cuboid: ", volume_result, "\n")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
