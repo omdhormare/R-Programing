@@ -1,0 +1,29 @@
+
+f1=factor(c("A","B","C","A","B","C"))
+print("Orignal Factor :")
+print(f1)
+
+levels(f1)[1]="D"
+print("Updated factor :")
+print(f1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
