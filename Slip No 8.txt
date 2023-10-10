@@ -1,0 +1,22 @@
+
+a=c(10,20,40,50,30)
+b=c(10,80,30,40,50)
+print("Original Data Frame :")
+ab=data.frame(a,b)
+print("Dublicated Element These Data Frame ")
+print(duplicated(ab))
+
+print("Unique Rows In data Frame :")
+print(unique(ab))
+
+
+
+
+
+
+
+
+
+
+
+
