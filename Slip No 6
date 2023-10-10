@@ -1,5 +1,3 @@
 x=c("Big Data","Php","DSA","SE")
 > y=c(90,95,98,85)
-> barplot(y,names.arg=x,col="orange")
 > barplot(y,names.arg=x,col="orange",density=10)
-> 
