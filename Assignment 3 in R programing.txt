@@ -1,0 +1,149 @@
+SET A:
+1. Write a program to calculate factorial of a input number using user defined function.
+......................................................................................................................................................................................
+calculate_factorial <- function(n) {
+  if (n == 0) {
+    return(1)
+  } else {
+    return(n * calculate_factorial(n - 1))
+  }
+}
+
+num <- as.integer(readline("Enter a number: "))
+
+if (num < 0) {
+  cat("Factorial is not negative numbers.\n")
+} else {
+  result <- calculate_factorial(num)
+  cat("The factorial of", num, "is", result, "\n")
+}
+......................................................................................................................................................................................
+2. Write R program to find the factors of a given number using user defined function
+
+num <- as.integer(readline("Enter a number: "))
+if (num <= 0) {
+  cat("Factors are not defined for non-positive numbers.\n")
+} else {
+  factors <- 1:num
+  factors <- factors[num %% factors == 0]
+  cat("The factors of", num, "are: ", paste(factors, collapse = ", "), "\n")
+}
+......................................................................................................................................................................................
+3. Write a R Program to connect two different strings
+
+string1 <- "Hello, "
+string2 <- "World"
+result <- paste(string1, string2)
+cat("Concatenated string: ", result, "\n")
+......................................................................................................................................................................................
+SET B:
+
+1. Write a program to calculate xy using user defined function (Use default parameters)
+
+calculate_power <- function(x, y = 2) {
+  return(x^y)
+}
+
+cat("5^2 =", calculate_power(5), "\n")
+cat("5^3 =", calculate_power(5, 3), "\n")
+
+......................................................................................................................................................................................
+
+2. Write R program to accept a string and character from user and replace all occurrences of 
+that character from string with other character.
+
+input_string <- readline("Enter a string: ")
+char_to_replace <- readline("Enter the character to replace: ")
+replacement_char <- readline("Enter the replacement character: ")
+
+result_string <- gsub(char_to_replace, replacement_char, input_string)
+
+cat("Modified string:", result_string, "\n")
+.........................................................................................................................................................................................
+3. Write a recursive function in R to calculate multiplication of all digits of a given input number
+
+num <- as.integer(readline("Enter a number: "))
+
+if (num < 0) {
+  cat("Please enter a non-negative number.\n")
+} else {
+  product <- prod(as.integer(unlist(strsplit(as.character(num), "")))
+  cat("The product of digits in", num, "is:", product, "\n")
+}
+
+.........................................................................................................................................................................................
+5. Write a function isPrime, which accepts an integer as parameter and returns 1 if the number is prime and 0 otherwise
+
+isPrime <- function(n) {
+  if (n <= 1) {
+    return(0)  # 0 and 1 are not prime
+  }
+  if (n == 2) {
+    return(1)  # 2 is prime
+  }
+  if (n %% 2 == 0) {
+    return(0) 
+  }
+  for (i in 3:sqrt(n)) {
+    if (n %% i == 0) {
+      return(0)  
+    }
+  }
+  return(1) 
+}
+
+num <- as.integer(readline("Enter a number: "))
+
+is_prime <- isPrime(num)
+
+if (is_prime == 1) {
+  cat(num, "is a prime number.\n")
+} else {
+  cat(num, "is not a prime number.\n")
+}
+....................................................................................................................................................................................
+
+SET C:
+1. Write a R program to print the numbers from 1 to 100 and print "Fizz" for multiples of 3, 
+print "Buzz" for multiples of 5, and print "FizzBuzz" for multiples of both.
+
+for (i in 1:100) {
+  if (i %% 3 == 0 && i %% 5 == 0) {
+    cat("FizzBuzz ")
+  } else if (i %% 3 == 0) {
+    cat("Fizz ")
+  } else if (i %% 5 == 0) {
+    cat("Buzz ")
+  } else {
+    cat(i, " ")
+  }
+  
+  if (i %% 10 == 0) {
+    cat("\n")
+  }
+}
+....................................................................................................................................................................................
+2. Write a program to calculate sum of following series up to n terms using user defined 
+function
+Sum=X+X2
+/2!+X3
+/3!+……
+
+calculate_series_sum <- function(x, n) {
+  sum_result <- 0
+  for (i in 1:n) {
+    term <- (x^i) / factorial(i)
+    sum_result <- sum_result + term
+  }
+  return(sum_result)
+}
+
+x <- as.numeric(readline("Enter the value of X: "))
+n <- as.integer(readline("Enter the number of terms (n): "))
+
+series_sum <- calculate_series_sum(x, n)
+cat("Sum of the series:", series_sum, "\n")
+
+
+
+
